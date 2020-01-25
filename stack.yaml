@@ -1,6 +1,4 @@
-resolver: nightly-2018-11-07
-
-allow-newer: true
+resolver: lts-14.21
 
 packages:
 - game
@@ -13,14 +11,11 @@ extra-deps:
 - vect-0.4.7
 - wavefront-0.7.1.1
 - megaparsec-6.5.0
-
 - github: lambdacube3d/lambdacube-ir
   commit: 8a0a17abedc9d6b46b41d744c1a2be53efa6336b
   subdirs:
     - lambdacube-ir.haskell
-
 - github: lambdacube3d/lambdacube-gl
   commit: 297828bdcf105c5942ed0e43d9f28130f543f34c
-
 - github: lambdacube3d/lambdacube-compiler
   commit: dc10dc255638b86f4a20a29a1b492e2415640b60

@@ -1,39 +1,40 @@
-name:                quake3-mapviewer
-version:             0.1.0.0
-synopsis:            quake 3 map viewer application
-homepage:            lambdacube3d.com
-license:             BSD3
-author:              Csaba Hruska
-maintainer:          csaba.hruska@gmail.com
-category:            Game
-build-type:          Simple
-cabal-version:       >=1.10
+cabal-version: 2.4
+name:          quake3-mapviewer
+version:       0.1.0.0
+synopsis:      quake 3 map viewer application
+homepage:      lambdacube3d.com
+license:       BSD-3-Clause
+author:        Csaba Hruska
+maintainer:    csaba.hruska@gmail.com
+category:      Game
+build-type:    Simple
 
 executable q3mapviewer
   main-is:          Main.hs
-  other-modules:    Camera
-                    Content
-                    Engine
-                    Entity
-                    ItemsMV
-  default-language: Haskell2010
+  other-modules:
+    Camera
+    Content
+    Engine
+    Entity
+    ItemsMV
 
+  default-language: Haskell2010
   build-depends:
-    base,
-    containers,
-    filepath,
-    directory,
-    vect,
-    vector,
-    GLFW-b,
-    elerea,
-    OpenGLRaw,
-    proteaaudio,
-    bytestring,
-    unordered-containers,
-    binary,
-    pretty-show,
-    JuicyPixels,
-    deepseq,
-    lambdacube-gl,
-    lambdacube-quake3-engine
+    , base
+    , binary
+    , bytestring
+    , containers
+    , deepseq
+    , directory
+    , elerea
+    , filepath
+    , GLFW-b
+    , JuicyPixels
+    , lambdacube-gl
+    , lambdacube-quake3-engine
+    , OpenGLRaw
+    , pretty-show
+    , proteaaudio               ^>=0.7.0.1
+    , unordered-containers
+    , vect                      ^>=0.4.7
+    , vector

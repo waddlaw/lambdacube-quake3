@@ -1,0 +1,24 @@
+packages:
+  ./game
+  ./game-engine
+  ./mapviewer
+  ./tools/md3-show
+
+source-repository-package
+  type: git
+  location: https://github.com/lambdacube3d/lambdacube-ir
+  tag: 8a0a17abedc9d6b46b41d744c1a2be53efa6336b
+  subdir: lambdacube-ir.haskell
+
+source-repository-package
+  type: git
+  location: https://github.com/lambdacube3d/lambdacube-gl
+  tag: 297828bdcf105c5942ed0e43d9f28130f543f34c
+
+source-repository-package
+  type: git
+  location: https://github.com/lambdacube3d/lambdacube-compiler
+  tag: dc10dc255638b86f4a20a29a1b492e2415640b60
+
+allow-newer:
+  vect:Cabal
